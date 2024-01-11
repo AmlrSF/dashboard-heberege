@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dashboard-heberege';
+ 
+  title = "Dashboard"
+  //Sidebar toggle show hide function
+
+  
+
 }
