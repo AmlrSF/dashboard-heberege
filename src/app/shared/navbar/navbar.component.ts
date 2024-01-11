@@ -12,8 +12,10 @@ export class NavbarComponent {
   constructor(private functionsS:FunctionsService){}
 
   
+  
   public addToggle(){
     this.functionsS.addToggle(); 
   }
+
 
 }

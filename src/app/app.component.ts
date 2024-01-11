@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FunctionsService } from './functions/functions.service';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
  
   title = "Dashboard"
-  //Sidebar toggle show hide function
+  constructor(public functionsS: FunctionsService) {}
 
-  
-
+  getContentStyles() {
+    return this.functionsS.status ? {'width': 'calc(100% - 60px)', 'left': '60px'} : {};
+  }
 }
